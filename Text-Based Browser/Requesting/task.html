@@ -2,16 +2,14 @@
 
 <p>Now we should bring our browser closer to resembling a real one by adding an address bar. In this stage, you need to leave your hard-coded variables behind and show your user some real pages. Make the browser request real input URLs and display the results. </p>
 
-<p>One of the simplest ways to do this is by using the Request library. It is already installed in your project, so you can use it. This library allows your browser to get any web page via URL by one string. You can find this string in the <a target="_blank" href="https://2.python-requests.org/en/master/user/quickstart/#response-content" rel="noopener noreferrer nofollow">Request documentation</a>, though it’s better to read the <a target="_blank" href="https://2.python-requests.org/en/master/user/quickstart" rel="noopener noreferrer nofollow">whole quick manual</a> to get a better sense of how this works.</p>
-
-<p>You’re almost certainly going to run into challenges at some point. You might find that you suddenly don't have permission to visit certain websites. That’s because of the user-agent, which is just a string that all browsers use to mark the request. Browsers have different user-agents, and since yours doesn’t have one, it may encounter problems. Frankly, browsers add a lot of additional information to the requests. All this info can be set using the request library. For this task, it's optional, but feel free to experiment.</p>
+<p>You might find that you suddenly don't have permission to visit certain websites. That’s because of the user-agent, which is just a string that all browsers use to mark the request. Browsers have different user-agents, and since yours doesn’t have one, it may encounter problems. Frankly, browsers add a lot of additional information to the requests. All this info can be set using the request library. For this task, it's optional, but feel free to experiment.</p>
 
 <h2 style="text-align: center;">Objectives</h2>
 
 <p>Keep the functionality from the previous stages and follow the same guidelines for file names. You don't need to keep the predefined variables with the content of web pages. Instead, add new features to the browser:</p>
 
 <ol>
-	<li>Your program should read the URL from the input as before, but now it should show the real web page using the Request library.</li>
+	<li>Your program should read the URL from the input as before, but now it should show the real web page.</li>
 	<li>Since the user can input the URL without <code class="language-python">https://</code> in the beginning, your browser should append this string if it is not there.</li>
 </ol>
 

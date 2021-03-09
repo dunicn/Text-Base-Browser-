@@ -8,6 +8,8 @@
 
 <p>Each tag has its own purpose: <code class="java">&lt;p&gt;</code> for text, <code class="java">&lt;h1&gt; &lt;h2&gt; … &lt;h6&gt;</code> for headers, <code class="java">&lt;a&gt;</code> for links, <code class="java">&lt;ul&gt; &lt;ol&gt; &lt;li&gt;</code> for lists.</p>
 
+<p>Also, in this stage, try to make your program be able to handle incorrect URLs: for example, if an address without a dot and a top-level domain following it (for example, <span style="color: #000000;"><span style="background-color: #f3f4f6; font-size: 14.4px;">google</span></span> and not <code class="java">google.com</code>) is entered, your program should output a line <code class="java">Incorrect URL</code>. Note that if you pass an incorrect URL to the method get(), it'll throw an exception called <code class="java">requests.exceptions.ConnectionError</code>.</p>
+
 <h2 style="text-align: center;">Objectives</h2>
 
 <p>In this stage, you need to extract and output the content between these tags. No more <code class="java">&lt;div&gt;</code>, <code class="java">&lt;script&gt;</code>, <code class="java">&lt;p&gt;</code> and so on, just text! Your browser should display only the content of a limited list of tags (<code class="java">&lt;p&gt;</code>, headers, <code class="java">&lt;a&gt;</code> and <code class="java">&lt;ul&gt;</code>, <code class="java">&lt;ol&gt;</code>, <code class="java">&lt;li&gt;</code>) without showing the tags themselves.</p>
@@ -15,6 +17,8 @@
 <p>Use the library <code class="java">beautifulsoup4</code> to make these changes. This library is already installed in your project.</p>
 
 <p>To pass the tests, simply <a target="_blank" href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" rel="noopener noreferrer nofollow">find the function</a> allowing us to extract the human-readable text from a web page.<strong> </strong>If you’re curious, feel free to browse through some more information about <a target="_blank" href="https://www.dataquest.io/blog/web-scraping-tutorial-python/" rel="noopener noreferrer nofollow">parsing</a>!</p>
+
+<p>When an invalid URL is entered (URL without a dot and a top-level domain name), the program should output <code class="java">Incorrect URL</code>.</p>
 
 <h2 style="text-align: center;">Example</h2>
 
